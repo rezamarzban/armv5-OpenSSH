@@ -94,4 +94,8 @@ Above arguments for `ssh` command forward telnet and ftp ports (23 and 21) from 
 
 So device will be accessible in remote host, Or it will be visible in the internet behind NAT by running above command everytime.
 
+You can use the -f switch to requesting ssh to run in background just before command execution.
+
+In addition the -N switch can be omitted, as it doesn't enable ssh command execution, it's there to be useful when forwarding ports. And -tt switch can be used for bash script environment for ssh command.
+
 *Note: options list under `-o` switch for `ssh` command is available in `ssh_config` file at portable OpenSSH source https://github.com/openssh/openssh-portable
