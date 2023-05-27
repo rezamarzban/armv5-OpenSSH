@@ -98,4 +98,6 @@ You can use the -f switch to requesting ssh to run in background just before com
 
 In addition the -N switch can be omitted, as it doesn't enable ssh command execution, it's there to be useful when forwarding ports. And -tt switch can be used for bash script environment for ssh command.
 
+*Hint: In this method remote port forwarding `-R 0.0.0.0:23:127.0.0.1:23`, The local device will be available from all remote server IPs.
+
 *Note: options list under `-o` switch for `ssh` command is available in `ssh_config` file at portable OpenSSH source https://github.com/openssh/openssh-portable
